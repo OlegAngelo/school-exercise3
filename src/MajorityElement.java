@@ -36,9 +36,9 @@ public class MajorityElement {
        }
     }
 
-    public static int printMajority(){
+    public static void printMajority(){
 
-        int arrayOfIntegers[] = {5, 2, 4, 3, 5, 5, 2, 5, 1, 5, 5, 5, 4, 5, 2, 3, 5, 5, 3, 1};
+        int arrayOfIntegers[] = {5,5,5};
         int maxLength = arrayOfIntegers.length / arrayOfIntegers[0];
 
         int candidate = findCandidate(arrayOfIntegers, maxLength);
@@ -46,9 +46,8 @@ public class MajorityElement {
         if(isMajority(arrayOfIntegers, maxLength, candidate)){
             System.out.println("The majority element is " + candidate);
         }else{
-            return -1;
+            System.out.println("There is no majority element");
         }
-        return maxLength;
     }
 
      public static void main(String[] args) {
