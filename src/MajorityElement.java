@@ -41,7 +41,7 @@ public class MajorityElement {
 
 
     public static void main(String[] args) {
-        int[] arrayOfIntegers = {5, 2,5, 4, 3, 5, 5, 2, 5, 1, 5, 5, 5, 4, 5, 2, 3, 5, 5, 3, 1};           // set the array
+        int[] arrayOfIntegers = {5, 2, 4, 3, 5, 5, 2, 5, 1, 5, 5, 5, 4, 5, 2, 3, 5, 5, 3, 1};           // set the array
         findMajorityElement(arrayOfIntegers);                                                           // call the method with a parameter of arrayOfIntegers
     }
 }
