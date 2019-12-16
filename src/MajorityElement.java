@@ -30,18 +30,23 @@ public class MajorityElement {
            }
        }
 
-       if (count > maxLengthOfTheArray / 2) {                                                           // if the count is greater than the half of the length of the array, then >
+       if (count > maxLengthOfTheArray / 2) {
+           System.out.println("----Problem 1. Majority Element----");                                                      // if the count is greater than the half of the length of the array, then >
            System.out.println("The majority element is " + maj_element);                                // prints the maj_element
        }else if(maxLengthOfTheArray == 0){                                                              // BUT if theres only one element, it prints the element
+           System.out.println("----Problem 1. Majority Element----");
            return;
-       } else {                                                                                         // otherwise, if count is equal or lesser than the half of the length of the array, then >
+       } else {
+           System.out.println("----Problem 1. Majority Element----");                                                      // otherwise, if count is equal or lesser than the half of the length of the array, then >
            System.out.println("Majority element does not exist");                                       // prints no majority element
        }
     }
 
 
     public static void main(String[] args) {
+
         int[] arrayOfIntegers = {5, 2, 4, 3, 5, 5, 2, 5, 1, 5, 5, 5, 4, 5, 2, 3, 5, 5, 3, 1};           // set the array
         findMajorityElement(arrayOfIntegers);                                                           // call the method with a parameter of arrayOfIntegers
+
     }
 }
